@@ -1,0 +1,26 @@
+
+{{# if success}}
+ <p> Successful validation</p> <br>
+{{ else }}
+    {{# if errors }}
+        <p> errors</p>
+        <ul>
+            {{# each errors}}
+              <li> {{ this.msg }}</li>
+            {{/each}}
+        </ul>
+    {{/if}}
+{{/if}}
+<div style="margin: 10% 0 0 30%">
+  <form action="/insert" method="post"> 
+    Name : <input  type="text" name="name"> <br> <br>
+    Age:  <input  type="text" name="age"> <br> <br>
+    <input type="submit" >
+  </form>
+</div>
+
+<div style="margin: 10% 0 0 30%">
+  <a href="/get-data">  Show all data </a>
+    
+
+</div>

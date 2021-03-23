@@ -1,0 +1,24 @@
+<h1> {{ title }}</h1>
+<p>  Welcome to {{ title }} </p>
+
+<!-- # sign start of a valid block, /if  means end of a valid block -->
+{{# if condition }} 
+    condition is met 
+{{ else }}
+    condition is not met
+{{/if}}
+<br>
+<!-- for each loop -->
+<!-- value is value , key starts from 0-->
+{{# each anyArray as |val key| }}  
+
+    {{ key }} : {{ val}} <br>
+    <!-- only for value you can use {{ this}} -->
+
+{{/each}}
+
+<!-- a from to check post request -->
+<form action="/test/submit" method ="post">  
+    <input type ="text" name="id"> 
+    <button type="submit">Submit </button>
+</form>

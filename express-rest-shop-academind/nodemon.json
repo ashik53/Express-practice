@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "QYPfpkS0OQG8WPac",
+        "JWT_KEY" : "36 chambers" 
+    }
+}
